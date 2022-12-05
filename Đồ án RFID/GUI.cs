@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Đồ_án_RFID
 {
-    public partial class Form1 : Form
+    public partial class GUI : Form
     {
-        public Form1()
+        public GUI()
         {
             InitializeComponent();
         }
