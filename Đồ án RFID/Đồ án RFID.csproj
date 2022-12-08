@@ -58,6 +58,7 @@
     <Compile Include="GUI.Designer.cs">
       <DependentUpon>GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="KetNoiCSDL.cs" />
     <Compile Include="Lichsuquet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,7 @@
     <Compile Include="Taothe.Designer.cs">
       <DependentUpon>Taothe.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinKH.cs" />
     <EmbeddedResource Include="Gioithieu.resx">
       <DependentUpon>Gioithieu.cs</DependentUpon>
     </EmbeddedResource>
