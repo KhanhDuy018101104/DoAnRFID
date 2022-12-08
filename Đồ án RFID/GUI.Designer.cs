@@ -45,14 +45,14 @@ namespace Đồ_án_RFID
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtmathe = new System.Windows.Forms.TextBox();
+            this.txtmakh = new System.Windows.Forms.TextBox();
+            this.txttenkh = new System.Windows.Forms.TextBox();
+            this.txtgioitinh = new System.Windows.Forms.TextBox();
+            this.txtsdt = new System.Windows.Forms.TextBox();
+            this.txtcmnd = new System.Windows.Forms.TextBox();
+            this.txtngaysinh = new System.Windows.Forms.TextBox();
+            this.txtdiachi = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
@@ -79,8 +79,9 @@ namespace Đồ_án_RFID
             // quảnLýThẻToolStripMenuItem
             // 
             this.quảnLýThẻToolStripMenuItem.Name = "quảnLýThẻToolStripMenuItem";
-            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýThẻToolStripMenuItem.Text = "Quản lý thẻ";
+            this.quảnLýThẻToolStripMenuItem.Click += new System.EventHandler(this.quảnLýThẻToolStripMenuItem_Click);
             // 
             // lịchSửToolStripMenuItem
             // 
@@ -93,8 +94,9 @@ namespace Đồ_án_RFID
             // lịchSửQuétThẻToolStripMenuItem
             // 
             this.lịchSửQuétThẻToolStripMenuItem.Name = "lịchSửQuétThẻToolStripMenuItem";
-            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lịchSửQuétThẻToolStripMenuItem.Text = "Lịch sử quét thẻ";
+            this.lịchSửQuétThẻToolStripMenuItem.Click += new System.EventHandler(this.lịchSửQuétThẻToolStripMenuItem_Click);
             // 
             // pictureBoxMain
             // 
@@ -112,6 +114,7 @@ namespace Đồ_án_RFID
             this.txtScanID.Name = "txtScanID";
             this.txtScanID.Size = new System.Drawing.Size(191, 20);
             this.txtScanID.TabIndex = 0;
+            this.txtScanID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtScanID_KeyDown);
             // 
             // label1
             // 
@@ -193,75 +196,75 @@ namespace Đồ_án_RFID
             this.label8.TabIndex = 9;
             this.label8.Text = "Địa chỉ";
             // 
-            // textBox1
+            // txtmathe
             // 
-            this.textBox1.Location = new System.Drawing.Point(395, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtmathe.Location = new System.Drawing.Point(395, 51);
+            this.txtmathe.Name = "txtmathe";
+            this.txtmathe.Size = new System.Drawing.Size(320, 20);
+            this.txtmathe.TabIndex = 10;
             // 
-            // textBox2
+            // txtmakh
             // 
-            this.textBox2.Location = new System.Drawing.Point(395, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(320, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtmakh.Location = new System.Drawing.Point(395, 91);
+            this.txtmakh.Name = "txtmakh";
+            this.txtmakh.Size = new System.Drawing.Size(320, 20);
+            this.txtmakh.TabIndex = 11;
             // 
-            // textBox3
+            // txttenkh
             // 
-            this.textBox3.Location = new System.Drawing.Point(395, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(320, 20);
-            this.textBox3.TabIndex = 12;
+            this.txttenkh.Location = new System.Drawing.Point(395, 131);
+            this.txttenkh.Name = "txttenkh";
+            this.txttenkh.Size = new System.Drawing.Size(320, 20);
+            this.txttenkh.TabIndex = 12;
             // 
-            // textBox4
+            // txtgioitinh
             // 
-            this.textBox4.Location = new System.Drawing.Point(395, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(320, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtgioitinh.Location = new System.Drawing.Point(395, 171);
+            this.txtgioitinh.Name = "txtgioitinh";
+            this.txtgioitinh.Size = new System.Drawing.Size(320, 20);
+            this.txtgioitinh.TabIndex = 13;
             // 
-            // textBox5
+            // txtsdt
             // 
-            this.textBox5.Location = new System.Drawing.Point(395, 210);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(320, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtsdt.Location = new System.Drawing.Point(395, 210);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Size = new System.Drawing.Size(320, 20);
+            this.txtsdt.TabIndex = 14;
             // 
-            // textBox6
+            // txtcmnd
             // 
-            this.textBox6.Location = new System.Drawing.Point(395, 250);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(320, 20);
-            this.textBox6.TabIndex = 15;
+            this.txtcmnd.Location = new System.Drawing.Point(395, 250);
+            this.txtcmnd.Name = "txtcmnd";
+            this.txtcmnd.Size = new System.Drawing.Size(320, 20);
+            this.txtcmnd.TabIndex = 15;
             // 
-            // textBox7
+            // txtngaysinh
             // 
-            this.textBox7.Location = new System.Drawing.Point(395, 290);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(320, 20);
-            this.textBox7.TabIndex = 16;
+            this.txtngaysinh.Location = new System.Drawing.Point(395, 290);
+            this.txtngaysinh.Name = "txtngaysinh";
+            this.txtngaysinh.Size = new System.Drawing.Size(320, 20);
+            this.txtngaysinh.TabIndex = 16;
             // 
-            // textBox8
+            // txtdiachi
             // 
-            this.textBox8.Location = new System.Drawing.Point(395, 330);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(320, 20);
-            this.textBox8.TabIndex = 17;
+            this.txtdiachi.Location = new System.Drawing.Point(395, 330);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(320, 20);
+            this.txtdiachi.TabIndex = 17;
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtdiachi);
+            this.Controls.Add(this.txtngaysinh);
+            this.Controls.Add(this.txtcmnd);
+            this.Controls.Add(this.txtsdt);
+            this.Controls.Add(this.txtgioitinh);
+            this.Controls.Add(this.txttenkh);
+            this.Controls.Add(this.txtmakh);
+            this.Controls.Add(this.txtmathe);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -302,13 +305,13 @@ namespace Đồ_án_RFID
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtmathe;
+        private System.Windows.Forms.TextBox txtmakh;
+        private System.Windows.Forms.TextBox txttenkh;
+        private System.Windows.Forms.TextBox txtgioitinh;
+        private System.Windows.Forms.TextBox txtsdt;
+        private System.Windows.Forms.TextBox txtcmnd;
+        private System.Windows.Forms.TextBox txtngaysinh;
+        private System.Windows.Forms.TextBox txtdiachi;
     }
 }

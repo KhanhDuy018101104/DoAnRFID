@@ -63,6 +63,7 @@ namespace Đồ_án_RFID
             this.btxemlichsuquet.TabIndex = 3;
             this.btxemlichsuquet.Text = "Xem";
             this.btxemlichsuquet.UseVisualStyleBackColor = true;
+            this.btxemlichsuquet.Click += new System.EventHandler(this.btxemlichsuquet_Click);
             // 
             // dataGridView_LichSuQuet
             // 
@@ -88,6 +89,7 @@ namespace Đồ_án_RFID
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Lichsuquet";
             this.Text = "THỜI GIAN QUÉT THẺ";
+            this.Load += new System.EventHandler(this.Lichsuquet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_LichSuQuet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
