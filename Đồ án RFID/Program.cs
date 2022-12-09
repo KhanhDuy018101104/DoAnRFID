@@ -16,7 +16,7 @@ namespace Đồ_án_RFID
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Gioithieu());
+            Application.Run(new GUI());
         }
     }
 }

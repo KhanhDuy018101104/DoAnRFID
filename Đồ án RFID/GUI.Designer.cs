@@ -79,7 +79,7 @@ namespace Đồ_án_RFID
             // quảnLýThẻToolStripMenuItem
             // 
             this.quảnLýThẻToolStripMenuItem.Name = "quảnLýThẻToolStripMenuItem";
-            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.quảnLýThẻToolStripMenuItem.Text = "Quản lý thẻ";
             this.quảnLýThẻToolStripMenuItem.Click += new System.EventHandler(this.quảnLýThẻToolStripMenuItem_Click);
             // 
@@ -94,7 +94,7 @@ namespace Đồ_án_RFID
             // lịchSửQuétThẻToolStripMenuItem
             // 
             this.lịchSửQuétThẻToolStripMenuItem.Name = "lịchSửQuétThẻToolStripMenuItem";
-            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.lịchSửQuétThẻToolStripMenuItem.Text = "Lịch sử quét thẻ";
             this.lịchSửQuétThẻToolStripMenuItem.Click += new System.EventHandler(this.lịchSửQuétThẻToolStripMenuItem_Click);
             // 
@@ -280,6 +280,7 @@ namespace Đồ_án_RFID
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GUI";
             this.Text = "QUẢN LÝ KHÁCH HÀNG";
+            this.Load += new System.EventHandler(this.GUI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();

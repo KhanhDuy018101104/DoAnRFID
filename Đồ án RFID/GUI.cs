@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Đồ_án_RFID
 {
@@ -69,6 +70,11 @@ namespace Đồ_án_RFID
         {
             Lichsuquet form = new Lichsuquet();
             form.Show();
+        }
+
+        private void GUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

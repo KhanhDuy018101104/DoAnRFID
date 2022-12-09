@@ -112,5 +112,8 @@
   <ItemGroup>
     <None Include="bin\Debug\rfid.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="people_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
