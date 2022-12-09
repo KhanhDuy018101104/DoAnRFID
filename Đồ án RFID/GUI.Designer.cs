@@ -53,6 +53,8 @@ namespace Đồ_án_RFID
             this.txtcmnd = new System.Windows.Forms.TextBox();
             this.txtngaysinh = new System.Windows.Forms.TextBox();
             this.txtdiachi = new System.Windows.Forms.TextBox();
+            this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +63,8 @@ namespace Đồ_án_RFID
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýToolStripMenuItem,
-            this.lịchSửToolStripMenuItem});
+            this.lịchSửToolStripMenuItem,
+            this.giớiThiệuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -94,7 +97,7 @@ namespace Đồ_án_RFID
             // lịchSửQuétThẻToolStripMenuItem
             // 
             this.lịchSửQuétThẻToolStripMenuItem.Name = "lịchSửQuétThẻToolStripMenuItem";
-            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lịchSửQuétThẻToolStripMenuItem.Text = "Lịch sử quét thẻ";
             this.lịchSửQuétThẻToolStripMenuItem.Click += new System.EventHandler(this.lịchSửQuétThẻToolStripMenuItem_Click);
             // 
@@ -252,6 +255,21 @@ namespace Đồ_án_RFID
             this.txtdiachi.Size = new System.Drawing.Size(320, 20);
             this.txtdiachi.TabIndex = 17;
             // 
+            // giớiThiệuToolStripMenuItem
+            // 
+            this.giớiThiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thôngTinPhầnMềmToolStripMenuItem});
+            this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
+            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
+            // 
+            // thôngTinPhầnMềmToolStripMenuItem
+            // 
+            this.thôngTinPhầnMềmToolStripMenuItem.Name = "thôngTinPhầnMềmToolStripMenuItem";
+            this.thôngTinPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.thôngTinPhầnMềmToolStripMenuItem.Text = "Thông tin phần mềm";
+            this.thôngTinPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhầnMềmToolStripMenuItem_Click);
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,5 +332,7 @@ namespace Đồ_án_RFID
         private System.Windows.Forms.TextBox txtcmnd;
         private System.Windows.Forms.TextBox txtngaysinh;
         private System.Windows.Forms.TextBox txtdiachi;
+        private System.Windows.Forms.ToolStripMenuItem giớiThiệuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinPhầnMềmToolStripMenuItem;
     }
 }

@@ -76,5 +76,11 @@ namespace Đồ_án_RFID
         {
 
         }
+
+        private void thôngTinPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gioithieu frm = new Gioithieu();
+            frm.Show();
+        }
     }
 }
