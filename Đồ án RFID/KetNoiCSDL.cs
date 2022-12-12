@@ -15,7 +15,7 @@ namespace Đồ_án_RFID
         {
             try
             {
-                string sqlcon = @"Data Source = DESKTOP - S4EE5LP\DUY; Initial Catalog = GymRFID; Integrated Security = True";
+                string sqlcon = @"Data Source = DESKTOP-S4EE5LP\DUY; Initial Catalog = GymRFID; Integrated Security = True";
                 cnn.ConnectionString = sqlcon;
                 if (cnn.State == ConnectionState.Closed)
                     cnn.Open();
