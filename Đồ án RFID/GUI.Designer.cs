@@ -35,6 +35,8 @@ namespace Đồ_án_RFID
             this.quảnLýThẻToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lịchSửToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lịchSửQuétThẻToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.txtScanID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@ namespace Đồ_án_RFID
             this.txtcmnd = new System.Windows.Forms.TextBox();
             this.txtngaysinh = new System.Windows.Forms.TextBox();
             this.txtdiachi = new System.Windows.Forms.TextBox();
-            this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +82,7 @@ namespace Đồ_án_RFID
             // quảnLýThẻToolStripMenuItem
             // 
             this.quảnLýThẻToolStripMenuItem.Name = "quảnLýThẻToolStripMenuItem";
-            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.quảnLýThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýThẻToolStripMenuItem.Text = "Quản lý thẻ";
             this.quảnLýThẻToolStripMenuItem.Click += new System.EventHandler(this.quảnLýThẻToolStripMenuItem_Click);
             // 
@@ -100,6 +100,21 @@ namespace Đồ_án_RFID
             this.lịchSửQuétThẻToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lịchSửQuétThẻToolStripMenuItem.Text = "Lịch sử quét thẻ";
             this.lịchSửQuétThẻToolStripMenuItem.Click += new System.EventHandler(this.lịchSửQuétThẻToolStripMenuItem_Click);
+            // 
+            // giớiThiệuToolStripMenuItem
+            // 
+            this.giớiThiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thôngTinPhầnMềmToolStripMenuItem});
+            this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
+            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
+            // 
+            // thôngTinPhầnMềmToolStripMenuItem
+            // 
+            this.thôngTinPhầnMềmToolStripMenuItem.Name = "thôngTinPhầnMềmToolStripMenuItem";
+            this.thôngTinPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.thôngTinPhầnMềmToolStripMenuItem.Text = "Thông tin phần mềm";
+            this.thôngTinPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhầnMềmToolStripMenuItem_Click);
             // 
             // pictureBoxMain
             // 
@@ -226,6 +241,7 @@ namespace Đồ_án_RFID
             this.txtgioitinh.Name = "txtgioitinh";
             this.txtgioitinh.Size = new System.Drawing.Size(320, 20);
             this.txtgioitinh.TabIndex = 13;
+            this.txtgioitinh.TextChanged += new System.EventHandler(this.txtgioitinh_TextChanged);
             // 
             // txtsdt
             // 
@@ -254,21 +270,6 @@ namespace Đồ_án_RFID
             this.txtdiachi.Name = "txtdiachi";
             this.txtdiachi.Size = new System.Drawing.Size(320, 20);
             this.txtdiachi.TabIndex = 17;
-            // 
-            // giớiThiệuToolStripMenuItem
-            // 
-            this.giớiThiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinPhầnMềmToolStripMenuItem});
-            this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
-            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
-            // 
-            // thôngTinPhầnMềmToolStripMenuItem
-            // 
-            this.thôngTinPhầnMềmToolStripMenuItem.Name = "thôngTinPhầnMềmToolStripMenuItem";
-            this.thôngTinPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.thôngTinPhầnMềmToolStripMenuItem.Text = "Thông tin phần mềm";
-            this.thôngTinPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhầnMềmToolStripMenuItem_Click);
             // 
             // GUI
             // 

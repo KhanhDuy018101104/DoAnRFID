@@ -150,6 +150,7 @@ namespace Đồ_án_RFID
             this.txttenkh.Name = "txttenkh";
             this.txttenkh.Size = new System.Drawing.Size(276, 20);
             this.txttenkh.TabIndex = 10;
+            this.txttenkh.TextChanged += new System.EventHandler(this.txttenkh_TextChanged);
             // 
             // txtgioitinh
             // 
@@ -298,6 +299,7 @@ namespace Đồ_án_RFID
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Taothe";
             this.Text = "QUẢN LÝ THẺ";
+            this.Load += new System.EventHandler(this.Taothe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

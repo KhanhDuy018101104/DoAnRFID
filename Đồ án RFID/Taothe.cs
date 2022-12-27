@@ -83,10 +83,10 @@ namespace Đồ_án_RFID
                 txtmakh.Text = row.Cells["MaKH"].Value.ToString();
                 txttenkh.Text = row.Cells["TenKH"].Value.ToString();
                 txtgioitinh.Text = row.Cells["GioiTinh"].Value.ToString();
-                txtsdt.Text = row.Cells["sdt"].Value.ToString();
+                txtsdt.Text = row.Cells["SĐT"].Value.ToString();
                 txtcmnd.Text = row.Cells["CMND"].Value.ToString();
-                txtdiachi.Text = row.Cells["diachi"].Value.ToString();
-                txtngaysinh.Text = row.Cells["ngaysinh"].Value.ToString();
+                txtngaysinh.Text = row.Cells["NgaySinh"].Value.ToString();
+                txtdiachi.Text = row.Cells["Diachi"].Value.ToString();
                 Image im = GetCopyImage(@"picture\" + txtmathe.Text + ".jpg");
                 pictureBox1.Image = im;
                 //pictureBox1.Load(@"picture\" + txtmathe.Text + ".jpg");
@@ -137,6 +137,16 @@ namespace Đồ_án_RFID
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttenkh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Taothe_Load(object sender, EventArgs e)
         {
 
         }

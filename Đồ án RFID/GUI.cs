@@ -39,12 +39,13 @@ namespace Đồ_án_RFID
                 txtgioitinh.Text = dt.Rows[0]["GioiTinh"].ToString();
                 txtsdt.Text = dt.Rows[0]["SĐT"].ToString();
                 txtcmnd.Text = dt.Rows[0]["CMND"].ToString();
-                txtngaysinh.Text = dt.Rows[0]["NgaySinh"].ToString();
+                DateTime ngaysinh = (DateTime)dt.Rows[0]["NgaySinh"];
+                txtngaysinh.Text = ngaysinh.ToString("dd/MM/yyyy");
                 txtdiachi.Text = dt.Rows[0]["Diachi"].ToString();
                 Image im = GetCopyImage(@"picture\" + mathe + ".jpg");
                 pictureBoxMain.Image = im;
                 //pictureBoxMain.Load(@"picture\" + mathe + ".jpg");
-                ThongTinKH.InsertThoiGianQuetThe(txtmathe.Text, txttenkh.Text, DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                ThongTinKH.InsertThoiGianQuetThe(txtmathe.Text, txttenkh.Text, DateTime.Now.ToString("dd/MMM/yyyy HH:mm:ss"));
             }
             else
                 MessageBox.Show("Thẻ chưa đăng ký!");
@@ -53,6 +54,7 @@ namespace Đồ_án_RFID
         {
             using (Image im = Image.FromFile(path))
             {
+
                 Bitmap bm = new Bitmap(im);
                 return bm;
             }
@@ -81,6 +83,11 @@ namespace Đồ_án_RFID
         {
             Gioithieu frm = new Gioithieu();
             frm.Show();
+        }
+
+        private void txtgioitinh_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

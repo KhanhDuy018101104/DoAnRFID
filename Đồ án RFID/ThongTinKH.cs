@@ -20,7 +20,7 @@ namespace Đồ_án_RFID
 
         public static void InsertThoiGianQuetThe(string mathe, string tenkh, string thoigian)
         {
-            string sql = "INSERT INTO LICHSUQUET (MaThe, TenKH, ThoiGian) VALUES('" + mathe + "','" + tenkh + "','" + thoigian + "')";
+            string sql = "INSERT INTO LICHSUQUET (MaThe, TenKH, ThoiGian) VALUES('" + mathe + "', N'" + tenkh + "','" + thoigian + "')";
             KetNoiCSDL.ExcuteNonQuery(sql);
         }
 
@@ -45,15 +45,14 @@ namespace Đồ_án_RFID
 
         public static void DangKyTheMoi(string mathe, string makh, string tenkh, string gioitinh, string sdt, string cmnd, string diachi, string ngaysinh)
         {
-            string sql = "INSERT INTO KHACHHANG (MaThe, MaKH, TenKH, GioiTinh, SĐT, CMND, Diachi, NgaySinh) VALUES ('"
-                + mathe + "','" + makh + "','" + tenkh + "','" + gioitinh + "','" + sdt + "','" + cmnd + "','" + diachi + "','" + ngaysinh + "')";
+            string sql = "INSERT INTO KHACHHANG (MaThe, MaKH, TenKH, GioiTinh, SĐT, CMND, Diachi, NgaySinh) VALUES ('" + mathe + "','" + makh + "', N'" + tenkh + "','" + gioitinh + "','" + sdt + "','" + cmnd + "', N'" + diachi + "','" + ngaysinh + "')";
             KetNoiCSDL.ExcuteNonQuery(sql);
         }
 
         public static void CapNhatThe(string mathe, string makh, string tenkh, string gioitinh, string sdt, string cmnd, string diachi, string ngaysinh)
         {
-            string sql = "UPDATE KHACHHANG SET MaKH = '" + makh + "', TenKH = '" + tenkh +
-                "', GioiTinh = '" + gioitinh + "', SĐT = '" + sdt + "', CMND = '" + cmnd + "', Diachi = '" + diachi + "', NgaySinh = '" + ngaysinh + "' WHERE MaThe = '" + mathe + "'";
+            string sql = "UPDATE KHACHHANG SET MaKH = '" + makh + "', TenKH = N'" + tenkh +
+                "', GioiTinh = '" + gioitinh + "', SĐT = '" + sdt + "', CMND = '" + cmnd + "', Diachi = N'" + diachi + "', NgaySinh = '" + ngaysinh + "' WHERE MaThe = '" + mathe + "'";
             KetNoiCSDL.ExcuteNonQuery(sql);
         }
 
